@@ -57,7 +57,7 @@ if uploaded_file is not None:
         st.image(image, channels="BGR", caption="Imagem carregada", use_container_width=True)
 
         # Fazer a predição
-        predicted_class, confidence = predict_image(image)
+        predicted_class = predict_image(image)
 
         if predicted_class:
             st.success(f"Classe Predita: {predicted_class}")
