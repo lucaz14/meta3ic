@@ -39,7 +39,7 @@ def predict_image(image):
         predictions = model.predict(img)
         class_index = np.argmax(predictions)
         predicted_class = flower_classes[class_index]
-        confidence = float(predictions[0][class_index])
+        
 
         return predicted_class, confidence
     except Exception as e:
@@ -61,7 +61,7 @@ if uploaded_file is not None:
 
         if predicted_class:
             st.success(f"Classe Predita: {predicted_class}")
-            st.info(f"Confiança: {confidence:.2f}")
+            
         else:
             st.error(f"Erro: {confidence}")
     else:
