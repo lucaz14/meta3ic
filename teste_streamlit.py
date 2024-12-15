@@ -63,6 +63,6 @@ if uploaded_file is not None:
             st.success(f"Classe Predita: {predicted_class}")
             
         else:
-            st.error(f"Erro: {confidence}")
+            st.error(f"Erro")
     else:
         st.error("Não foi possível processar a imagem. Certifique-se de que é uma imagem válida.")
