@@ -41,7 +41,7 @@ def predict_image(image):
         predicted_class = flower_classes[class_index]
         
 
-        return predicted_class, confidence
+        return predicted_class
     except Exception as e:
         return None, str(e)
 
